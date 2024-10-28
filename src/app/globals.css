@@ -16,14 +16,27 @@
   }
 }
 
+.earth {
+  width: 160px;
+  height: 160px;
+  /* background: url(https://zupimages.net/up/19/34/6vlb.gif); */
+  border-radius: 100%;
+  background-size: 340px;
+  animation: earthAnim 12s infinite linear;
+  margin: 0 auto;
+  border: 1px solid #cdd1d3;
+}
+
+@keyframes earthAnim {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -340px;
+  }
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
